@@ -11,4 +11,9 @@ builder.Services
 
 var app = builder.Build();
 
+app
+    .UseCatalogModule()
+    .UseBasketModule()
+    .UseOrderingModule();
+
 app.Run();
