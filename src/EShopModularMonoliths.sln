@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basket", "Modules\Basket\Ba
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering", "Modules\Ordering\Ordering\Ordering.csproj", "{A1F6C180-E2A9-4972-B1FE-C67D14B43403}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared\Shared.csproj", "{A1070873-D951-40BB-B364-308203C87709}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{A1F6C180-E2A9-4972-B1FE-C67D14B43403}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A1F6C180-E2A9-4972-B1FE-C67D14B43403}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A1F6C180-E2A9-4972-B1FE-C67D14B43403}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1070873-D951-40BB-B364-308203C87709}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1070873-D951-40BB-B364-308203C87709}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1070873-D951-40BB-B364-308203C87709}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1070873-D951-40BB-B364-308203C87709}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,5 +63,6 @@ Global
 		{956ADB44-0000-48D4-BB51-3D61F394C90F} = {C617B7A6-ED42-4195-B097-458B87748C9B}
 		{713A4250-0A2E-49F5-8F10-6C81D7A1FE7A} = {D5360921-9ED9-4198-B92E-A4DFA769997E}
 		{A1F6C180-E2A9-4972-B1FE-C67D14B43403} = {58178F4F-7669-49D0-8D08-331CC2BAB4EA}
+		{A1070873-D951-40BB-B364-308203C87709} = {B56B66CB-CCF7-4783-B21E-EE0FC1E1646F}
 	EndGlobalSection
 EndGlobal
