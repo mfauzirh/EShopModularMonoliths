@@ -21,6 +21,15 @@ public static class CatalogModule
     public static IApplicationBuilder UseCatalogModule(
         this IApplicationBuilder app)
     {
+        InitializeDatabaseAsync(app).GetAwaiter().GetResult();
+
         return app;
+    }
+
+    private static async Task InitializeDatabaseAsync(IApplicationBuilder app)
+    {
+        using var scope = app.ApplicationServices.CreateScope();
+        var context = scope.ServiceProvider.GetRequiredService<CatalogDbContext>();
+        await context.Database.MigrateAsync();
     }
 }
