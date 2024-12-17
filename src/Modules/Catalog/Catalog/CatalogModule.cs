@@ -9,6 +9,12 @@ public static class CatalogModule
     public static IServiceCollection AddCatalogModule(
         this IServiceCollection services, IConfiguration configuration) 
     {
+        // Data - Infrastructure services
+        var connectionString = configuration.GetConnectionString("Database");
+
+        services.AddDbContext<CatalogDbContext>(options =>
+            options.UseNpgsql(connectionString));
+
         return services;
     }
 
