@@ -6,7 +6,7 @@ public record DeleteProductCommand(Guid ProductId)
 
 public record DeleteProductResult(bool IsSuccess);
 
-public class DeleteProductHandler(CatalogDbContext dbContext)
+internal class DeleteProductHandler(CatalogDbContext dbContext)
     : ICommandHandler<DeleteProductCommand, DeleteProductResult>
 {
     public async Task<DeleteProductResult> Handle(DeleteProductCommand command, CancellationToken cancellationToken)

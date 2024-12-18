@@ -13,7 +13,6 @@
   <ItemGroup>
     <Folder Include="Products\Features\GetProductByCategory\" />
     <Folder Include="Products\Features\GetProductById\" />
-    <Folder Include="Products\Features\GetProducts\" />
   </ItemGroup>
 
 </Project>
